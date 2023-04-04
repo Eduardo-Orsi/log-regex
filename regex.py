@@ -42,7 +42,7 @@ result = {
 }
 
 df = pd.DataFrame(result)
-# df.to_excel("Log de Bloqueios nas APIs.xlsx", index=False)
-# df.drop_duplicates(subset="requestor_domain", inplace=True)
-# df.to_excel("Log de Bloqueios nas APIs Sem Duplicados.xlsx", index=False)
+df.to_excel("Log de Bloqueios nas APIs.xlsx", index=False)
+df.drop_duplicates(subset="requestor_domain", inplace=True)
+df.to_excel("Log de Bloqueios nas APIs Sem Duplicados.xlsx", index=False)
 print(df)
