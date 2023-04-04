@@ -13,8 +13,8 @@ is_allowed_ip = []
 is_allowed_domain = []
 is_allowed = []
 
-diretorio = os.getcwd()
-txt_files = glob(diretorio + "/logs/*.txt")
+directory = os.getcwd()
+txt_files = glob(directory + "/logs/*.txt")
 
 for file_path in txt_files:
     with open(file_path, "r", encoding="utf-8") as file:
